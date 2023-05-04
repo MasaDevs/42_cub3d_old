@@ -1,9 +1,9 @@
 NAME		=	cub3d
 CC			=	cc
 CFLAGS	=	-Wall -Wextra -Werror
-INCLUDE	=	-I /usr/include/ -I /usr/local/include -I ./include
+INCLUDE	=	-I /usr/include/ -I /usr/local/include -I ./minilibx-linux
 LIBDIR	=	-L/usr/local/lib -L/usr/lib
-LIB		=	-lmlx -lmlx_Linux -lXext -lX11 -lm -lz
+LIB		=	-lXext -lX11 -lm -lz
 MLXLIB	=	./minilibx-linux/libmlx.a
 SRCS	=	$(shell find srcs/ -name "*.c")
 OBJDIR	=	obj
